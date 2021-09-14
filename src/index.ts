@@ -5,7 +5,7 @@ class Sorter {
     constructor(collection: number[]) {
         this.collection = collection
     }*/
-    constructor(public collection: number[]) {
+    constructor(public collection: number[] | string) {
     }
 
     sort():void {
