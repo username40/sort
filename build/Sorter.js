@@ -4,7 +4,7 @@ exports.Sorter = void 0;
 var Sorter = /** @class */ (function () {
     /*
     collection: number[]
-
+  
     constructor(collection: number[]) {
         this.collection = collection
     }*/
@@ -15,10 +15,8 @@ var Sorter = /** @class */ (function () {
         var length = this.collection.length;
         for (var i = 0; i < length; i++) {
             for (var j = 0; j < length - i - 1; j++) {
-                if (this.collection[j] > this.collection[j + 1]) {
-                    var leftHand = this.collection[j];
-                    this.collection[j] = this.collection[j + 1];
-                    this.collection[j + 1] = leftHand;
+                if (this.collection.compare(j, j + 1)) {
+                    this.collection.swap(j, j + 1);
                 }
             }
         }
