@@ -2,7 +2,7 @@ export class CharactersCollection {
     constructor(public data: string) {}
 
     // for interface
-    // another one comment
+    // another one comment!
     get length():number {
         return this.data.length
     }
