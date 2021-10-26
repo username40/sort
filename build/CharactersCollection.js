@@ -6,6 +6,7 @@ var CharactersCollection = /** @class */ (function () {
         this.data = data;
     }
     Object.defineProperty(CharactersCollection.prototype, "length", {
+        // for interface
         get: function () {
             return this.data.length;
         },
