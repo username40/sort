@@ -7,6 +7,7 @@ var CharactersCollection = /** @class */ (function () {
     }
     Object.defineProperty(CharactersCollection.prototype, "length", {
         // for interface
+        // another one comment!
         get: function () {
             return this.data.length;
         },
