@@ -1,3 +1,4 @@
+import { Sorter } from './Sorter'
 class Node {
 
     next: Node | null = null
@@ -6,7 +7,7 @@ class Node {
     }
 }
 
-export class LinkedList {
+export class LinkedList  extends Sorter{
     head: Node | null = null;
 
     // void not means only NO return it means that you can't return somenthig
